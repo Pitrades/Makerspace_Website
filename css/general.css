@@ -24,6 +24,7 @@ ul {
 
 .logo {
     width: 80px;
+    margin-left: 10px;
 }
 
 .hide-mobile {
@@ -68,6 +69,11 @@ nav ul li a{
     background-color: rgb(65, 73, 78);
 }
 
+
+nav ul li a:hover{
+    background-color: rgb(87, 98, 105);
+}
+
 .exit-btn{
     margin-bottom: 1em;
     margin-top: -1.3em;
@@ -88,11 +94,6 @@ nav {
 @media only screen and (min-width: 1000px)  {
     .logo {
         width: 100px
-    }
-    .container{
-        width: 85%;
-        margin: 0 auto;
-
     }
 
     .show-desktop {
@@ -115,17 +116,27 @@ nav {
     }
     nav ul li {
         float: left;
+        padding: 0;
+        margin: 1em 2em;
     }
 
     nav ul li a{
         color: black;
         background-color: inherit;
         text-align: right;
-        padding: 1em 2em;
+        padding: 1em 1.4em;
+        margin: 0;
     }
 
     nav ul li a:hover {
         background-color: inherit;
+        text-decoration: underline;
     }
 
+
+    .container{
+        width: 85%;
+        margin: 0 auto;
+
+    }
 }
